@@ -399,9 +399,10 @@ export default function Home() {
         </p>
 
         <a
-          href={APK_LINK}
+          href="https://drive.google.com/uc?export=download&id=1D1YS9OmWi7-v9JfPmEqK4T46Lj1OWl2o"
           target="_blank"
           rel="noopener noreferrer"
+          download
           className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl tracking-wide transition-all duration-300 hover:scale-105 active:scale-95"
           style={{
             background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
