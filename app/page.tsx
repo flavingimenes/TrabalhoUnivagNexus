@@ -35,7 +35,7 @@ const APK_LINK =
 
 
 export default function Home() {
-  const [openFeature, setOpenFeature] = useState<number | null>(0);
+  const [openFeature, setOpenFeature] = useState<number | null>(null);
 
   return (
     <main className="min-h-screen bg-[#05040f] text-white font-sans overflow-x-hidden">
