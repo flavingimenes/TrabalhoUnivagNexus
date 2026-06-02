@@ -282,8 +282,8 @@ export default function Home() {
 
                 <div
                   className={`grid transition-all duration-300 ease-in-out ${isOpen
-                    ? "grid-rows-[1fr] opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
                     }`}
                 >
                   <div className="overflow-hidden">
@@ -399,22 +399,22 @@ export default function Home() {
         </p>
 
         <a
-          href="https://github.com/dhiogonasc/nexus-client/releases/download/apk/Nexus-RPG.apk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl tracking-wide transition-all duration-300 hover:scale-105 active:scale-95"
-          style={{
-            background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
-          }}
-        >
-          <FaRocket className="text-2xl" />
+  href="https://github.com/dhiogonasc/nexus-client/releases/download/apk/nexus-rpg1.0.apk"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl tracking-wide transition-all duration-300 hover:scale-105 active:scale-95"
+  style={{
+    background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
+  }}
+>
+  <FaRocket className="text-2xl" />
 
-          <span>Download Android</span>
+  <span>Download Android</span>
 
-          <span className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200">
-            ↓
-          </span>
-        </a>
+  <span className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200">
+    ↓
+  </span>
+</a>
 
         <p className="mt-6 text-sm text-white/25 tracking-wider">
           Versão para Android
