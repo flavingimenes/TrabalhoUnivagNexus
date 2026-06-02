@@ -407,7 +407,6 @@ export default function Home() {
     background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
   }}
 >
-  <FaRocket className="text-2xl" />
 
   <span>Download Android</span>
 
