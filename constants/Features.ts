@@ -2,8 +2,13 @@ import homeImg from "../assets/homeImg.png";
 import missionImg from "../assets/missionImg.png";
 import profileImg from "../assets/profileImg.png"; 
 
+import { IoPlanetOutline } from "react-icons/io5";
+import { LuRocket } from "react-icons/lu";
+import { FaUserAstronaut } from "react-icons/fa6";
+
 export const FEATURE_GROUPS = [
   {
+    icone: IoPlanetOutline,
     title: "Tela de missões",
     description:
       "Ambiente principal onde os usuários podem acessar suas missões, desafios e progresso.",
@@ -20,6 +25,7 @@ export const FEATURE_GROUPS = [
     ]
   },
   {
+    icone: LuRocket,
     title: "Visualização do seu trajeto de aprendizagem",
     description:
       "Te prepara suas missões, desafios e progresso de forma visual e interativa.",
@@ -36,6 +42,7 @@ export const FEATURE_GROUPS = [
     ]
   },
   {
+    icone: FaUserAstronaut,
     title: "Experiência do Usuário",
     description:
       "Aqui voce pode ver seu perfil, acompanhar seu progresso e seus dados",

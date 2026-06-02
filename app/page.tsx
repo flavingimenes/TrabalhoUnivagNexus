@@ -30,7 +30,7 @@ import Image from "next/image";
 import Logo from "../assets/logo.png";
 
 const APK_LINK =
-  "https://expo.dev/accounts/flavingimenes/projects/client/builds/1a3d92a2-0d60-47c4-a55a-328916810342";
+  "https://github.com/dhiogonasc/nexus-client/releases/download/apk/nexus-rpg1.0.apk";
 
 
 
@@ -236,92 +236,173 @@ export default function Home() {
       </section>
 
       {/* ─── FUNCIONALIDADES ─── */}
-      <section className="relative z-10 px-6 md:px-16 py-24 max-w-5xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-xs font-bold tracking-[0.25em] uppercase text-violet-400 mb-3">
-            Funcionalidades
-          </p>
+<section className="relative z-10 px-6 md:px-16 py-24 max-w-6xl mx-auto">
+  {/* Glow de fundo */}
+  <div className="absolute inset-0 -z-10 pointer-events-none">
+    <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-violet-600/20 blur-[100px] rounded-full" />
+  </div>
 
-          <h2 className="text-3xl md:text-4xl font-black text-white">
-            Uma rápida olhada pelo Nexus-RPG
-          </h2>
-        </div>
+  <div className="text-center mb-14">
+    <p className="text-xs font-black tracking-[0.3em] uppercase text-violet-400 mb-4">
+      Funcionalidades
+    </p>
 
-        <div className="space-y-5">
-          {FEATURE_GROUPS.map((group, index) => {
-            const isOpen = openFeature === index;
+    <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
+      Uma rápida olhada pelo{" "}
+      <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+        Nexus-RPG
+      </span>
+    </h2>
 
-            return (
+    <p className="mt-5 max-w-2xl mx-auto text-white/50 text-sm md:text-base leading-relaxed">
+      Explore as principais áreas do aplicativo, desde missões interativas até
+      planetas, progresso e aprendizado gamificado.
+    </p>
+  </div>
+
+  <div className="space-y-5">
+    {FEATURE_GROUPS.map((group, index) => {
+      const isOpen = openFeature === index;
+
+      return (
+        <div
+          key={group.title}
+          className={`
+            relative overflow-hidden rounded-3xl border transition-all duration-300
+            ${
+              isOpen
+                ? "border-violet-500/40 bg-white/[0.06]"
+                : "border-white/10 bg-white/[0.035] hover:border-violet-500/30 hover:bg-white/[0.05]"
+            }
+          `}
+          style={{
+            boxShadow: isOpen
+              ? "0 0 45px rgba(139, 92, 246, 0.18)"
+              : "0 10px 40px rgba(0,0,0,0.35)",
+            backdropFilter: "blur(16px)",
+          }}
+        >
+          {/* detalhe lateral */}
+          <div
+          />
+
+          <button
+            type="button"
+            onClick={() => setOpenFeature(isOpen ? null : index)}
+            className="w-full flex items-center justify-between gap-5 p-6 md:p-7 text-left group"
+          >
+            <div className="flex items-start gap-4">
               <div
-                key={group.title}
-                className="rounded-2xl border border-white/8 bg-gradient-to-b from-white/4 to-transparent overflow-hidden transition-all duration-300 hover:border-violet-500/30"
-                style={{
-                  boxShadow: "0 4px 32px rgba(0,0,0,0.4)",
-                }}
+                className={`
+                  hidden sm:flex w-12 h-12 rounded-2xl items-center justify-center shrink-0
+                  border transition-all duration-300
+                  ${
+                    isOpen
+                      ? "border-violet-400/40 bg-violet-500/15"
+                      : "border-white/10 bg-white/5 group-hover:bg-violet-500/10"
+                  }
+                `}
               >
-                <button
-                  type="button"
-                  onClick={() => setOpenFeature(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 p-6 text-left group"
-                >
-                  <div>
-                    <h3 className="font-bold text-white text-lg mb-1">
-                      {group.title}
-                    </h3>
+                <span className="text-violet-300 font-black">
+                  {group.icone ? <group.icone /> : "⭐"}
+                </span>
+              </div>
 
-                    <p className="text-white/50 text-sm leading-relaxed">
-                      {group.description}
-                    </p>
-                  </div>
+              <div>
+                <h3 className="font-black text-white text-lg md:text-xl mb-2">
+                  {group.title}
+                </h3>
 
-                  <MdKeyboardArrowDown
-                    className={`text-3xl text-violet-300 shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
-                      }`}
-                  />
-                </button>
+                <p className="text-white/50 text-sm md:text-base leading-relaxed max-w-2xl">
+                  {group.description}
+                </p>
+              </div>
+            </div>
 
-                <div
-                  className={`grid transition-all duration-300 ease-in-out ${isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
-                    }`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="funcionalidades-mobile pb-6 flex place-content-start gap-20">
-                      <div className="h-px bg-gradient-to-r from-transparent via-violet-700/40 to-transparent mb-5" />
+            <div
+              className={`
+                w-11 h-11 rounded-2xl flex items-center justify-center shrink-0
+                border transition-all duration-300
+                ${
+                  isOpen
+                    ? "border-violet-400/40 bg-violet-500/15"
+                    : "border-white/10 bg-white/5 group-hover:bg-violet-500/10"
+                }
+              `}
+            >
+              <MdKeyboardArrowDown
+                className={`text-3xl text-violet-300 transition-transform duration-300 ${
+                  isOpen ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </div>
+          </button>
 
-                      <ul className="space-y-3 w-80 pt-4">
-                        {group.items.map((item) => (
-                          <li
-                            key={item}
-                            className="flex items-start gap-3 text-lg text-white/80 leading-relaxed font-medium"
-                          >
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+          <div
+            className={`grid transition-all duration-500 ease-in-out ${
+              isOpen
+                ? "grid-rows-[1fr] opacity-100"
+                : "grid-rows-[0fr] opacity-0"
+            }`}
+          >
+            <div className="overflow-hidden">
+              <div className="px-6 md:px-7 pb-7">
+                <div className="h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent mb-7" />
 
-                      <ul className="">
-                        {group.image?.map((img, idx) => (
-                          <li key={idx} className="">
-                            <Image
-                              src={img.src}
-                              alt={img.alt}
-                              width={img.width}
-                              height={img.height}
-                              className="rounded-lg border border-white/10"
-                            />
-                          </li>
-                        ))}
-                      </ul>
+                <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-10 items-center">
+                  {/* Lista de funcionalidades */}
+                  <ul className="space-y-4">
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        className="
+                          flex items-start gap-3 text-white/80 text-base md:text-lg
+                          leading-relaxed font-medium
+                        "
+                      >
+                        <span className="mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-violet-400 to-cyan-400 shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Imagens */}
+                  {group.image && group.image.length > 0 && (
+                    <div className="grid gap-4 justify-self-center">
+                      {group.image.map((img, idx) => (
+                        <div
+                          key={idx}
+                          className="
+                            relative rounded-2xl overflow-hidden border border-white/10
+                            bg-black/30 p-2
+                          "
+                          style={{
+                            boxShadow: "0 15px 45px rgba(0,0,0,0.35)",
+                          }}
+                        >
+                          <Image
+                            src={img.src}
+                            alt={img.alt}
+                            width={img.width}
+                            height={img.height}
+                            className="
+                              h-auto rounded-xl object-cover
+                              transition-transform duration-500 hover:scale-[1.02]
+                            "
+                          />
+                        </div>
+                      ))}
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
-            );
-          })}
+            </div>
+          </div>
         </div>
-      </section>
+      );
+    })}
+  </div>
+</section>
 
       {/* ─── TECNOLOGIAS ─── */}
       <section className="relative z-10 px-6 md:px-16 py-24">
@@ -399,21 +480,21 @@ export default function Home() {
         </p>
 
         <a
-  href="https://github.com/dhiogonasc/nexus-client/releases/download/apk/nexus-rpg1.0.apk"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl tracking-wide transition-all duration-300 hover:scale-105 active:scale-95"
-  style={{
-    background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
-  }}
->
+          href={APK_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl tracking-wide transition-all duration-300 hover:scale-105 active:scale-95"
+          style={{
+            background: "linear-gradient(135deg, #7c3aed, #4f46e5, #0ea5e9)",
+          }}
+        >
 
-  <span>Download Android</span>
+          <span>Download Android</span>
 
-  <span className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200">
-    ↓
-  </span>
-</a>
+          <span className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all duration-200">
+            ↓
+          </span>
+        </a>
 
         <p className="mt-6 text-sm text-white/25 tracking-wider">
           Versão para Android
