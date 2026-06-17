@@ -20,9 +20,12 @@ A plataforma utiliza elementos de jogos RPG, como exploração de planetas, miss
 
 A proposta do projeto é unir **educação, tecnologia e gamificação**, criando uma forma mais envolvente de aprender conceitos fundamentais de desenvolvimento de software.
 
-**Repositórios:**
-- Frontend: https://github.com/flavingimenes/TrabalhoUnivagNexus
-- Backend: https://github.com/dhiogonasc/nexus-client
+## 🔗 Repositórios do Projeto
+
+| Parte do Projeto | Repositório |
+|---|---|
+| **Frontend** | <a href="https://github.com/flavingimenes/TrabalhoUnivagNexus" target="_blank" rel="noopener noreferrer">Acessar repositório do Frontend</a> |
+| **Backend** | <a href="https://github.com/dhiogonasc/nexus-server" target="_blank" rel="noopener noreferrer">Acessar repositório do Backend</a> |
 
 ---
 
