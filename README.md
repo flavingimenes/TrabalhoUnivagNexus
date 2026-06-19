@@ -1,4 +1,6 @@
-# Nexus-RPG - Plataforma de Aprendizado Gamificada
+# 🚀 Nexus-RPG
+
+### Plataforma de Aprendizado Gamificada para Programação
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
@@ -8,341 +10,167 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-Plataforma educacional gamificada focada no aprendizado de programação, utilizando uma experiência inspirada em RPG espacial, com planetas, missões, desafios e progressão do usuário.
+Plataforma educacional gamificada que transforma o aprendizado de programação em uma jornada espacial — com planetas, missões, desafios e progressão do usuário.
 
 ---
 
-## Sobre o Projeto
+## 📖 Sobre o Projeto
 
-O **Nexus-RPG** é um projeto extensionista integrador desenvolvido por estudantes do curso de **Engenharia de Software da UNIVAG**, com o objetivo de transformar o aprendizado de programação em uma experiência mais interativa, visual e motivadora.
+O **Nexus-RPG** é um projeto extensionista integrador de **Engenharia de Software da UNIVAG**, que une **educação, tecnologia e gamificação** para tornar o aprendizado de programação mais interativo e motivador.
 
-A plataforma utiliza elementos de jogos RPG, como exploração de planetas, missões, desafios, progresso e conquistas, para tornar o estudo mais dinâmico. Em vez de seguir um modelo tradicional de ensino, o usuário avança por uma jornada espacial, completando missões e respondendo questões relacionadas a conteúdos de programação.
+Em vez do ensino tradicional, o usuário avança por uma jornada espacial: explora planetas, completa missões e responde desafios de programação, acumulando progresso conforme evolui.
 
-A proposta do projeto é unir **educação, tecnologia e gamificação**, criando uma forma mais envolvente de aprender conceitos fundamentais de desenvolvimento de software.
+---
 
-## 🔗 Repositórios do Projeto
+## 🔗 Repositórios
 
-| Parte do Projeto | Repositório |
+| Parte do Projeto | Link |
 |---|---|
-| **Frontend** | <a href="https://github.com/flavingimenes/TrabalhoUnivagNexus" target="_blank" rel="noopener noreferrer">Acessar repositório do Frontend</a> |
-| **Backend** | <a href="https://github.com/dhiogonasc/nexus-server" target="_blank" rel="noopener noreferrer">Acessar repositório do Backend</a> |
+| 📱 Frontend | [Repositório Frontend](https://github.com/flavingimenes/TrabalhoUnivagNexus) |
+| ⚙️ Backend | [Repositório Backend](https://github.com/dhiogonasc/nexus-server) |
 
 ---
 
-## Objetivo
+## 🎯 Objetivo
 
-O principal objetivo do **Nexus-RPG** é auxiliar estudantes no aprendizado de programação por meio de uma plataforma gamificada, onde o conteúdo é apresentado de forma progressiva e interativa.
-
-Além disso, o projeto busca aplicar conceitos de desenvolvimento de software, como:
-
-- Desenvolvimento mobile
-- Desenvolvimento web
-- API REST
-- Banco de dados relacional
-- Autenticação de usuários
-- Integração entre front-end e back-end
-- Experiência do usuário
-- Gamificação aplicada à educação
+Auxiliar estudantes no aprendizado de programação por meio de conteúdo progressivo e gamificado, aplicando na prática: desenvolvimento mobile/web, API REST, banco de dados relacional, autenticação e UX.
 
 ---
 
 ## ✨ Funcionalidades
 
-- Sistema de cadastro e login de usuários
-- Autenticação com token
-- Tela inicial com identidade visual espacial
-- Exploração de planetas temáticos
-- Sistema de missões educativas
-- Questões de múltipla escolha
-- Alternativas com validação de resposta
-- Feedback ao usuário durante a missão
-- Resultado final ao concluir uma missão
-- Sistema de progresso do usuário
-- Tela de perfil do usuário
-- Visualização da jornada de aprendizagem
-- Interface responsiva para mobile e web
-- Landing page para apresentação do projeto
-- Download do APK Android
-- Integração com API externa/back-end
+- 🔐 Cadastro, login e autenticação com token (JWT)
+- 🌌 Identidade visual espacial e exploração de planetas temáticos
+- 🪐 Sistema de missões com questões de múltipla escolha e feedback
+- 📊 Progresso do usuário e resultado ao final de cada missão
+- 👤 Perfil com visualização da jornada de aprendizagem
+- 📱💻 Interface responsiva (mobile e web)
+- ⬇️ Landing page com download do APK Android
 
 ---
 
-## Como Funciona
+## 🛠️ Como Funciona
 
-O funcionamento do **Nexus-RPG** é baseado em uma jornada de aprendizado gamificada:
+```
+Cadastro → Login → Planeta → Missão → Desafios → Resultado → Progresso
+```
 
-1. O usuário realiza seu cadastro na plataforma.
-2. Após o login, ele acessa sua jornada como astronauta.
-3. O sistema apresenta planetas e missões disponíveis.
-4. Cada missão contém desafios relacionados ao conteúdo estudado.
-5. O usuário responde às questões de múltipla escolha.
-6. Ao finalizar a missão, o sistema exibe o resultado.
-7. O progresso do usuário é atualizado conforme seu desempenho.
-8. Novas etapas podem ser liberadas conforme a evolução na plataforma.
-
-Esse modelo busca tornar o aprendizado mais motivador, substituindo uma experiência tradicional de estudo por uma jornada visual, interativa e progressiva.
+O usuário se cadastra, escolhe um planeta e completa missões respondendo desafios de múltipla escolha. Ao final de cada missão, recebe o resultado e tem seu progresso atualizado, liberando novas etapas conforme evolui.
 
 ---
 
-## Tecnologias Utilizadas
+## 🧰 Tecnologias
 
-### Front-end Mobile
+<table>
+<tr>
+<td valign="top" width="33%">
 
-- **React Native**  
-  Utilizado para o desenvolvimento da aplicação mobile.
+**📱 Mobile**
+- React Native + Expo
+- TypeScript
+- Expo Router
+- Axios
+- Expo Secure Store
+- React Native Reanimated
 
-- **Expo**  
-  Utilizado para facilitar o desenvolvimento, execução e build do aplicativo.
+</td>
+<td valign="top" width="33%">
 
-- **TypeScript**  
-  Utilizado para adicionar tipagem ao projeto, aumentando a segurança e organização do código.
+**🌐 Landing Page**
+- Next.js + React
+- TypeScript
+- Tailwind CSS
+- React Icons
 
-- **Expo Router**  
-  Utilizado para gerenciamento de rotas e navegação entre as telas do aplicativo.
+</td>
+<td valign="top" width="33%">
 
-- **Axios**  
-  Utilizado para comunicação com a API do back-end.
+**⚙️ Backend**
+- Java + Spring Boot
+- Spring Security
+- JPA / Hibernate
+- JWT
+- 🗄️ PostgreSQL
 
-- **Expo Secure Store**  
-  Utilizado para armazenamento seguro do token de autenticação.
-
-- **React Native Reanimated**  
-  Utilizado para animações e transições visuais.
-
----
-
-### Landing Page
-
-- **Next.js**  
-  Utilizado para criação da página web de apresentação do projeto.
-
-- **React.js**  
-  Utilizado para construção da interface da landing page.
-
-- **TypeScript**  
-  Utilizado para melhorar a organização e segurança do código.
-
-- **Tailwind CSS**  
-  Utilizado para estilização da interface web.
-
-- **React Icons**  
-  Utilizado para exibição dos ícones presentes na landing page.
+</td>
+</tr>
+</table>
 
 ---
 
-### Back-end
+## 🗄️ Banco de Dados
 
-- **Java**  
-  Linguagem utilizada no desenvolvimento da API.
-
-- **Spring Boot**  
-  Framework utilizado para criação da aplicação back-end.
-
-- **Spring Security**  
-  Utilizado para controle de autenticação e segurança da aplicação.
-
-- **JPA / Hibernate**  
-  Utilizado para persistência e comunicação com o banco de dados.
-
-- **JWT**  
-  Utilizado para autenticação baseada em token.
+PostgreSQL armazena usuários, planetas, missões, questões, respostas e progresso — permitindo acompanhar o avanço individual de cada usuário.
 
 ---
 
-### Banco de Dados
-
-- **PostgreSQL**  
-  Banco de dados relacional utilizado para armazenar as informações do sistema.
-
----
-
-## Banco de Dados
-
-O banco de dados do projeto foi estruturado para armazenar as informações necessárias para o funcionamento da plataforma.
-
-Entre os principais dados armazenados estão:
-
-- Usuários
-- Planetas
-- Missões
-- Questões
-- Alternativas
-- Respostas dos usuários
-- Progresso do usuário
-- Resultados das missões
-- Dados de autenticação
-
-Essa estrutura permite que o sistema acompanhe o avanço individual de cada usuário, registre seu desempenho e organize a experiência de aprendizado de forma progressiva.
-
----
-
-## Principais Recursos Técnicos
-
-- Aplicativo mobile com React Native e Expo
-- Landing page com Next.js
-- API RESTful com Java e Spring Boot
-- Integração entre mobile, web e back-end
-- Banco de dados relacional com PostgreSQL
-- Autenticação com token JWT
-- Armazenamento seguro de token no aplicativo
-- Organização modular de componentes
-- Serviços separados para autenticação, usuário, planeta e missão
-- Navegação baseada em rotas
-- Sistema de missões com perguntas e alternativas
-- Controle de progresso do usuário
-- Layout responsivo
-- Build para Android em formato APK
-
----
-
-## Responsividade
-
-O **Nexus-RPG** foi desenvolvido pensando em uma boa experiência tanto em dispositivos móveis quanto na web.
-
-A aplicação mobile foi construída com foco em Android, utilizando React Native e Expo. Além disso, a landing page foi desenvolvida com layout responsivo, permitindo uma boa visualização em computadores, notebooks, tablets e celulares.
-
----
-
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```bash
 Nexus-RPG/
-├── landing-page/
-│   ├── app/
-│   ├── assets/
-│   ├── constants/
-│   ├── public/
-│   ├── package.json
-│   ├── next.config.ts
-│   └── README.md
-│
-├── mobile-app/
-│   ├── app/
-│   │   ├── mission/
-│   │   ├── planet/
-│   │   ├── Account.tsx
-│   │   ├── homePage.tsx
-│   │   ├── index.tsx
-│   │   ├── logout.tsx
-│   │   └── register.tsx
-│   │
-│   ├── assets/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── data/
-│   │   ├── services/
-│   │   │   ├── auth/
-│   │   │   ├── domain/
-│   │   │   ├── api.ts
-│   │   │   └── storage.ts
-│   │   └── styles/
-│   │
-│   ├── app.json
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── api/
-│   ├── controllers/
-│   ├── services/
-│   ├── repositories/
-│   ├── models/
-│   ├── security/
-│   └── database/
+├── landing-page/        # Next.js — site de apresentação
+├── mobile-app/           # React Native + Expo
+│   ├── app/              # telas (mission, planet, account...)
+│   └── src/               # components, services, styles
+├── api/                  # Spring Boot
+│   ├── controllers/ services/ repositories/
+│   ├── models/ security/
 │
 └── README.md
 ```
 
 ---
 
-## Como Executar o Projeto
+## ▶️ Como Executar
 
-### Pré-requisitos
+**Pré-requisitos:** `Node.js` · `NPM` · `Expo CLI` · `Android Studio`/`Expo Go` · `Java JDK` · `PostgreSQL`
 
-Antes de iniciar, é necessário ter instalado:
-
-- Node.js
-- NPM
-- Expo CLI
-- Android Studio ou Expo Go
-- Java JDK
-- PostgreSQL
-
----
-
-### Executando o App Mobile
-
+**📱 App Mobile**
 ```bash
-cd client
-
-npm install
-
-npx expo start
+cd client && npm install && npx expo start
 ```
+Abra em dispositivo Android, emulador, navegador ou Expo Go.
 
-Após iniciar o Expo, é possível abrir o projeto em:
-
-- Dispositivo Android
-- Emulador Android
-- Navegador web
-- Expo Go
-
----
-
-### Executando a Landing Page
-
+**🌐 Landing Page**
 ```bash
-npm install
-
-npm run dev
+npm install && npm run dev
 ```
+Acesse `http://localhost:3000`
 
-Depois, acesse no navegador:
-
-```bash
-http://localhost:3000
-```
-
----
-
-### Executando o Back-end
-
+**⚙️ Backend**
 ```bash
 ./mvnw spring-boot:run
 ```
-
-Antes de executar, configure as credenciais do banco de dados no arquivo de configuração da aplicação.
-
----
-
-## APK Android
-
-O projeto possui uma versão em APK para instalação em dispositivos Android.
-
-A landing page do Nexus-RPG disponibiliza um botão para download do aplicativo, permitindo que o usuário instale a versão mobile diretamente no celular.
+> Configure as credenciais do banco antes de executar.
 
 ---
 
-## Integrantes
+## 📦 APK Android
 
-- Dhiogo Nascimento
-- Flávio Gimenes
-- Guilherme Augusto
-- Matheu Okada
+A landing page disponibiliza um botão para download direto do APK do Nexus-RPG.
 
 ---
 
-## Status do Projeto
+## 👥 Integrantes
 
-Projeto desenvolvido para fins acadêmicos como parte do **Projeto Extensionista Integrador do 5º semestre de Engenharia de Software da UNIVAG**.
+| 👤 Alunos |
+|---|
+| Flávio Gimenes |
+| Dhiogo Nascimento |
+| Matheus OKada |
+| Guilherme Augusto |
+---
 
 ---
 
-## Licença
+## 🎓 Status
 
-Este projeto foi desenvolvido para fins acadêmicos e educacionais.
+Desenvolvido para fins acadêmicos — **Projeto Extensionista Integrador, 5º semestre de Engenharia de Software, UNIVAG**.
 
 ---
 
-## Autor
+<div align="center">
 
-Desenvolvido por estudantes de Engenharia de Software - UNIVAG.
+Feito por estudantes de Engenharia de Software — UNIVAG
+
+</div>
